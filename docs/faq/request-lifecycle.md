@@ -4,7 +4,7 @@ Nest uygulamaları, **istek yaşam döngüsü** olarak adlandırdığımız bir 
 
 #### Middleware
 
-Middleware, belirli bir sıra içinde yürütülür. İlk olarak, Nest, global olarak bağlanmış middleware'leri çalıştırır (örneğin, `app.use` ile bağlanmış middleware'leri) ve ardından [modülle bağlantılı middleware'leri](/docs/middleware) çalıştırır, bu da yollara bağlı olarak belirlenir. Middleware'ler, Express'teki gibi sırayla çalıştırılır. Farklı modüller arasında bağlanmış middleware'lerin durumunda, kök modüle bağlanan middleware önce çalışır, ardından modüllerin içe aktarıldığı sırayla çalışır.
+Middleware, belirli bir sıra içinde yürütülür. İlk olarak, Nest, global olarak bağlanmış middleware'leri çalıştırır (örneğin, `app.use` ile bağlanmış middleware'leri) ve ardından [modülle bağlantılı middleware'leri](/docs/middlewares) çalıştırır, bu da yollara bağlı olarak belirlenir. Middleware'ler, Express'teki gibi sırayla çalıştırılır. Farklı modüller arasında bağlanmış middleware'lerin durumunda, kök modüle bağlanan middleware önce çalışır, ardından modüllerin içe aktarıldığı sırayla çalışır.
 
 #### Korumalar
 

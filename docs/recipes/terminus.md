@@ -29,7 +29,7 @@ Bir sağlık kontrolü, **sağlık göstergelerinin** bir özeti olarak görül�
 
 İlk sağlık kontrolümüzle başlamak için, `HealthModule`'u oluşturalım ve içine `TerminusModule`'u imports dizisine dahil edelim.
 
-> info **İpucu** [Nest CLI](cli/overview) kullanarak modülü oluşturmak için basitçe `$ nest g module health` komutunu çalıştırın.
+> info **İpucu** [Nest CLI](/docs/cli/overview) kullanarak modülü oluşturmak için basitçe `$ nest g module health` komutunu çalıştırın.
 
 ```typescript
 @@filename(health.module)
@@ -42,13 +42,13 @@ import { TerminusModule } from '@nestjs/terminus';
 export class HealthModule {}
 ```
 
-Sağlık kontrol(leri)miz, [kontrolcü](/docs/controllers) kullanılarak yürütülebilir, ki bu da [Nest CLI](cli/overview) kullanılarak kolayca kurulabilir.
+Sağlık kontrol(leri)miz, [kontrolcü](/docs/controllers) kullanılarak yürütülebilir, ki bu da [Nest CLI](/docs/cli/overview) kullanılarak kolayca kurulabilir.
 
 ```bash
 $ nest g controller health
 ```
 
-> info **Bilgi** Uygulamanızda kapatma kancalarını etkinleştirmeniz şiddetle önerilir. Terminus entegrasyonu, bu yaşam döngüsü olayını etkinleştirilmişse kullanır. Kapatma kancaları hakkında daha fazla bilgiyi [buradan](fundamentals/lifecycle-events#application-shutdown) okuyabilirsiniz.
+> info **Bilgi** Uygulamanızda kapatma kancalarını etkinleştirmeniz şiddetle önerilir. Terminus entegrasyonu, bu yaşam döngüsü olayını etkinleştirilmişse kullanır. Kapatma kancaları hakkında daha fazla bilgiyi [buradan](/docs/fundamentals/lifecycle-events#application-shutdown) okuyabilirsiniz.
 
 #### HTTP Sağlık Kontrolü
 
@@ -183,7 +183,7 @@ check() {
 
 #### TypeOrm sağlık göstergesi
 
-Terminus, sağlık kontrolünüze veritabanı kontrolleri eklemenize olanak tanır. Bu sağlık göstergesiyle başlamak için, [Veritabanı bölümünü](/docs/techniques/sql) kontrol etmeli ve uygulamanız içindeki veritabanı bağlantınızın kurulduğundan emin olmalısınız.
+Terminus, sağlık kontrolünüze veritabanı kontrolleri eklemenize olanak tanır. Bu sağlık göstergesiyle başlamak için, [Veritabanı bölümünü](/docs/techniques/database) kontrol etmeli ve uygulamanız içindeki veritabanı bağlantınızın kurulduğundan emin olmalısınız.
 
 > info **Hint** Arka planda `TypeOrmHealthIndicator`, genellikle veritabanının hala çalışıp çalışmadığını doğrulamak için kullanılan `SELECT 1` SQL komutunu basitçe yürütür. Oracle veritabanı kullanıyorsanız `SELECT 1 FROM DUAL` kullanır.
 
@@ -242,7 +242,7 @@ Eğer veritabanınıza erişilebiliyorsa, artık `http://localhost:3000` adresin
 }
 ```
 
-Eğer uygulamanız [birden fazla veritabanı kullanıyorsa](techniques/database#multiple-databases), her bağlantıyı `HealthController`'ınıza enjekte etmeniz gerekir. Sonra bağlantı referansını sadece `TypeOrmHealthIndicator`'a iletebilirsiniz.
+Eğer uygulamanız [birden fazla veritabanı kullanıyorsa](/docs/techniques/database), her bağlantıyı `HealthController`'ınıza enjekte etmeniz gerekir. Sonra bağlantı referansını sadece `TypeOrmHealthIndicator`'a iletebilirsiniz.
 
 ```typescript
 @@filename(health.controller)

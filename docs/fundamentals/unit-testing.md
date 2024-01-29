@@ -143,7 +143,7 @@ describe('CatsController', () => {
 
 > info **İpucu** `compile()` yöntemi **asenkron** olduğundan dolayı beklenmelidir. Modül derlendikten sonra, `get()` yöntemini kullanarak herhangi bir **statik** örneği alabilirsiniz.
 
-`TestingModule`, [modül referansı](/docs/fundamentals/module-ref) sınıfından miras alır ve bu nedenle dinamik olarak çözümlenebilen kapsamlı sağlayıcıları (geçici veya istek tabanlı) çözme yeteneğine sahiptir. Bunu `resolve()` yöntemi ile yapın (`get()` yöntemi yalnızca statik örnekleri alabilir).
+`TestingModule`, [modül referansı](/docs/fundamentals/module-reference) sınıfından miras alır ve bu nedenle dinamik olarak çözümlenebilen kapsamlı sağlayıcıları (geçici veya istek tabanlı) çözme yeteneğine sahiptir. Bunu `resolve()` yöntemi ile yapın (`get()` yöntemi yalnızca statik örnekleri alabilir).
 
 ```typescript
 const moduleRef = await Test.createTestingModule({
@@ -156,7 +156,7 @@ catsService = await moduleRef.resolve(CatsService);
 
 > warning **Uyarı** `resolve()` yöntemi, sağlayıcının kendi **DI konteyner alt-ağacından** benzersiz bir örnek döndürür. Her alt-ağacın benzersiz bir bağlam tanımlayıcısı vardır. Bu nedenle bu yöntemi birden fazla kez çağırırsanız ve örnek referanslarını karşılaştırırsanız, eşit olmadıklarını göreceksiniz.
 
-> info **İpucu** Modül referansı özelliklerini [buradan](/docs/fundamentals/module-ref) daha fazla öğrenin.
+> info **İpucu** Modül referansı özelliklerini [buradan](/docs/fundamentals/module-reference) daha fazla öğrenin.
 
 Herhangi bir sağlayıcının üretim sürümü yerine, test amaçlı bir [özel sağlayıcı](/docs/fundamentals/custom-providers) ile geçersiz kılabilirsiniz. Örneğin, bir canlı veritabanına bağlanmak yerine bir veritabanı servisini taklit edebilirsiniz. Override'ları bir sonraki bölümde ele alacağız, ancak bunlar birim testleri için de mevcuttur.
 
@@ -363,7 +363,7 @@ Derlenmiş modülün birkaç kullanışlı yöntemi bulunmaktadır, bunlar aşa�
       <code>get()</code>
     </td>
     <td>
-      Uygulama bağlamında mevcut olan bir denetleyici veya sağlayıcının (koruyucular, filtreler vb. dahil) statik bir örneğini alır. [modül referansı](/docs/fundamentals/module-ref) sınıfından miras alınmıştır.
+      Uygulama bağlamında mevcut olan bir denetleyici veya sağlayıcının (koruyucular, filtreler vb. dahil) statik bir örneğini alır. [modül referansı](/docs/fundamentals/module-reference) sınıfından miras alınmıştır.
     </td>
   </tr>
   <tr>
@@ -371,7 +371,7 @@ Derlenmiş modülün birkaç kullanışlı yöntemi bulunmaktadır, bunlar aşa�
       <code>resolve()</code>
     </td>
     <td>
-      Uygulama bağlamında mevcut olan bir denetleyici veya sağlayıcının (koruyucular, filtreler vb. dahil) dinamik olarak oluşturulmuş bir örneğini alır. [modül referansı](/docs/fundamentals/module-ref) sınıfından miras alınmıştır.
+      Uygulama bağlamında mevcut olan bir denetleyici veya sağlayıcının (koruyucular, filtreler vb. dahil) dinamik olarak oluşturulmuş bir örneğini alır. [modül referansı](/docs/fundamentals/module-reference) sınıfından miras alınmıştır.
     </td>
   </tr>
   <tr>

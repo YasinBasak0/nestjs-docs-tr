@@ -58,7 +58,7 @@ Birden çok projeyi yönetmek için her iki modu da kullanabilirsiniz. İşte fa
 | `nest build` ve `nest start` komutları                | Hedef varsayılanı otomatik olarak bağlamdaki (tek) projeye yönlendirilir | Hedef varsayılanı monorepo içindeki **varsayılan proje**'ye yönlendirilir |
 | Kütüphaneler                                           | Genellikle npm paketleme aracılığıyla manuel olarak yönetilir      | Yol yönetimi ve paketleme dahil, yerleşik destek          |
 
-Hangi modun sizin için daha uygun olduğuna karar vermenize yardımcı olacak daha ayrıntılı bilgi için [Workspaces](/docs/cli/monorepo) ve [Libraries](/docs/cli/libraries) bölümlerini okuyun.
+Hangi modun sizin için daha uygun olduğuna karar vermenize yardımcı olacak daha ayrıntılı bilgi için [Workspaces](/docs/cli/workspaces) ve [Libraries](/docs/cli/libraries) bölümlerini okuyun.
 
 <app-banner-courses></app-banner-courses>
 

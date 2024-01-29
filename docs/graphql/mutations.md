@@ -6,7 +6,7 @@ Resmi [Apollo](https://www.apollographql.com/docs/graphql-tools/generate-schema.
 
 #### Kod odaklı
 
-Önceki bölümde kullanılan `AuthorResolver`'a başka bir yöntem ekleyelim (bkz. [çözücüler](/docs/graphql/resolvers)).
+Önceki bölümde kullanılan `AuthorResolver`'a başka bir yöntem ekleyelim (bkz. [çözücüler](/docs/graphql/resolvers-map)).
 
 ```typescript
 @Mutation(returns => Post)
@@ -25,7 +25,7 @@ type Mutation {
 }
 ```
 
-`upvotePost()` yöntemi `postId` (`Int`)'yi bir argüman olarak alır ve güncellenmiş bir `Post` varlığını döndürür. [Çözücüler](/docs/graphql/resolvers) bölümünde açıklanan nedenlerden dolayı beklenen türü açıkça belirtmemiz gerektiğini unutmayın.
+`upvotePost()` yöntemi `postId` (`Int`)'yi bir argüman olarak alır ve güncellenmiş bir `Post` varlığını döndürür. [Çözücüler](/docs/graphql/resolvers-map) bölümünde açıklanan nedenlerden dolayı beklenen türü açıkça belirtmemiz gerektiğini unutmayın.
 
 Eğer mutasyonun bir nesne almasını istiyorsak, bir **input tipi** oluşturabiliriz. Input tipi, bir argüman olarak iletilen özel bir nesne türüdür (daha fazlası için [buraya](https://graphql.org/learn/schema/#input-types) bakın). Bir giriş tipini bildirmek için `@InputType()` dekoratörünü kullanın.
 
@@ -52,7 +52,7 @@ async upvotePost(
 
 #### Şema odaklı
 
-Önceki bölümde kullanılan `AuthorResolver`'ı genişletelim (bkz. [çözücüler](/docs/graphql/resolvers)).
+Önceki bölümde kullanılan `AuthorResolver`'ı genişletelim (bkz. [çözücüler](/docs/graphql/resolvers-map)).
 
 ```typescript
 @Mutation()

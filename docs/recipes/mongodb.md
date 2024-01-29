@@ -1,6 +1,6 @@
 ### MongoDB (Mongoose)
 
-> **Uyarı** Bu makalede, özel bileşenler kullanarak sıfırdan **Mongoose** paketi üzerinde bir `DatabaseModule` oluşturmayı öğreneceksiniz. Sonuç olarak, bu çözüm, hazır kullanıma ve hemen kullanılmaya uygun olan özel `@nestjs/mongoose` paketini kullanarak atlayabileceğiniz birçok gereksiz detay içermektedir. Daha fazla bilgi için [buraya](/docs/techniques/mongodb) bakın.
+> **Uyarı** Bu makalede, özel bileşenler kullanarak sıfırdan **Mongoose** paketi üzerinde bir `DatabaseModule` oluşturmayı öğreneceksiniz. Sonuç olarak, bu çözüm, hazır kullanıma ve hemen kullanılmaya uygun olan özel `@nestjs/mongoose` paketini kullanarak atlayabileceğiniz birçok gereksiz detay içermektedir. Daha fazla bilgi için [buraya](/docs/techniques/mongo) bakın.
 
 [Mongoose](https://mongoosejs.com), [MongoDB](https://www.mongodb.org/) nesne modelleme aracının en popüleridir.
 
@@ -12,7 +12,7 @@ Bu kütüphane ile maceraya başlamak için tüm gerekli bağımlılıkları kur
 $ npm install --save mongoose
 ```
 
-İlk yapmamız gereken adım, `connect()` fonksiyonu kullanarak veritabanı bağlantısını kurmaktır. `connect()` fonksiyonu bir `Promise` döndürdüğü için [asyonik sağlayıcı](/docs/fundamentals/async-components) oluşturmamız gerekiyor.
+İlk yapmamız gereken adım, `connect()` fonksiyonu kullanarak veritabanı bağlantısını kurmaktır. `connect()` fonksiyonu bir `Promise` döndürdüğü için [asyonik sağlayıcı](/docs/fundamentals/async-providers) oluşturmamız gerekiyor.
 
 ```typescript
 @@filename(database.providers)

@@ -2,19 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-function reverseSidebarItems(items) {
-  // Reverse items in categories
-  const result = items.map((item) => {
-    if (item.type === 'category') {
-      return {...item, items: reverseSidebarItems(item.items)};
-    }
-    return item;
-  });
-  // Reverse items at current level
-  result.reverse();
-  return result;
-}
-
 const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',

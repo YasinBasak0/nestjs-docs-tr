@@ -134,7 +134,7 @@ ama kapanırken, her sağlayıcı yok edilecektir. Ancak, sağlayıcınızın ö
 
 #### Özel Sağlayıcılar
 
-Nest, ilişkileri çözen dahili bir ters kontrol ("IoC") konteynerine sahiptir. Bu özellik, yukarıda açıklanan bağımlılık enjeksiyon özelliğinin temelidir, ancak aslında şimdiye kadar açıkladığımızdan çok daha güçlüdür. Bir sağlayıcıyı tanımlamanın birkaç yolu vardır: düz değerleri, sınıfları ve hem asenkron hem de senkron fabrikaları kullanabilirsiniz. Daha fazla örnek için [buraya](/docs/fundamentals/dependency-injection) bakabilirsiniz.
+Nest, ilişkileri çözen dahili bir ters kontrol ("IoC") konteynerine sahiptir. Bu özellik, yukarıda açıklanan bağımlılık enjeksiyon özelliğinin temelidir, ancak aslında şimdiye kadar açıkladığımızdan çok daha güçlüdür. Bir sağlayıcıyı tanımlamanın birkaç yolu vardır: düz değerleri, sınıfları ve hem asenkron hem de senkron fabrikaları kullanabilirsiniz. Daha fazla örnek için [buraya](/docs/fundamentals/custom-providers) bakabilirsiniz.
 
 #### İsteğe Bağlı Sağlayıcılar
 

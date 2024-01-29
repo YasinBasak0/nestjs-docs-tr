@@ -14,7 +14,7 @@ Bu süreç, dil, uygulamanızın gereksinim duyduğu paket sayısı gibi çeşit
 
 Soğuk başlatma önemlidir ve kontrolümüz dışındaki şeyler olsa da, bu süreyi mümkün olduğunca kısaltmak için kendi tarafımızda yapabileceğimiz birçok şey bulunmaktadır.
 
-Nest'i karmaşık, kurumsal uygulamalarda kullanılmak üzere tasarlanmış tam teşekküllü bir çerçeve olarak düşünebilirsiniz. Ancak, [Bağımsız uygulamalar](/docs/standalone-applications) özelliğini kullanarak, Nest'in DI sistemini basit işçilerde, CRON görevlerinde, CLIs veya serverless işlevlerinde kullanabilirsiniz.
+Nest'i karmaşık, kurumsal uygulamalarda kullanılmak üzere tasarlanmış tam teşekküllü bir çerçeve olarak düşünebilirsiniz. Ancak, [Bağımsız uygulamalar](/docs/application-context) özelliğini kullanarak, Nest'in DI sistemini basit işçilerde, CRON görevlerinde, CLIs veya serverless işlevlerinde kullanabilirsiniz.
 
 #### Performans Testleri
 
@@ -239,7 +239,7 @@ export const handler: Handler = async (
 };
 ```
 
-> info **İpucu** Birden çok serverless fonksiyonu oluşturmak ve bunlar arasında ortak modülleri paylaşmak için [CLI Monorepo modunu](/docs/cli/monorepo#monorepo-mode) kullanmanızı öneririz.
+> info **İpucu** Birden çok serverless fonksiyonu oluşturmak ve bunlar arasında ortak modülleri paylaşmak için [CLI Monorepo modunu](/docs/cli/workspaces#monorepo-mode) kullanmanızı öneririz.
 
 > warning **Uyarı** Eğer `@nestjs/swagger` paketini kullanıyorsanız, serverless fonksiyonun bağlamında düzgün çalışması için ek adımlar gerekmektedir. Daha fazla bilgi için bu [konuya](https://github.com/nestjs/swagger/issues/199) göz atın.
 

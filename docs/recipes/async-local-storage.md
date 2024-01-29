@@ -12,7 +12,7 @@ Alternatif olarak, ALS'yi bir sistemin bir kısmı için (örneğin _işlem_ nes
 
 NestJS kendisi için `AsyncLocalStorage` için herhangi bir yerleşik soyutlama sağlamaz, bu yüzden konseptin tam anlayışını elde etmek için en basit HTTP durumu için nasıl uygulayabileceğimizi inceleyelim:
 
-> info **info** Hazır [özel bir paket](recipes/async-local-storage#nestjs-cls) için okumaya devam etmek için aşağıya bakın.
+> info **info** Hazır [özel bir paket](/docs/recipes/async-local-storage#nestjs-cls) için okumaya devam etmek için aşağıya bakın.
 
 1. İlk olarak, `AsyncLocalStorage`'ın yeni bir örneğini bir paylaşılan kaynak dosyasında oluşturun. NestJS kullanıyorsak, ayrıca bunu özel bir sağlayıcı ile bir modül haline getirelim.
 

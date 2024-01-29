@@ -2,7 +2,7 @@
 
 ##### Bu bölüm sadece TypeScript için geçerlidir
 
-> **Uyarı** Bu makalede, **TypeORM** paketini temel alarak sıfırdan `DatabaseModule` oluşturmayı öğreneceksiniz. Bu çözüm, kullanıma hazır ve kutudan çıkmış `@nestjs/typeorm` paketini kullanarak atlayabileceğiniz bir miktar fazlalık içerir. Daha fazla bilgi için [buraya](/docs/techniques/sql) bakın.
+> **Uyarı** Bu makalede, **TypeORM** paketini temel alarak sıfırdan `DatabaseModule` oluşturmayı öğreneceksiniz. Bu çözüm, kullanıma hazır ve kutudan çıkmış `@nestjs/typeorm` paketini kullanarak atlayabileceğiniz bir miktar fazlalık içerir. Daha fazla bilgi için [buraya](/docs/techniques/database) bakın.
 
 [TypeORM](https://github.com/typeorm/typeorm), kesinlikle node.js dünyasında bulunan en olgun Nesne İlişkisel Eşleme (ORM) aracıdır. TypeScript ile yazıldığından, Nest çerçevesi ile oldukça iyi çalışır.
 
@@ -14,7 +14,7 @@ Bu kütüphaneyi kullanmaya başlamak için tüm gerekli bağımlılıkları kur
 $ npm install --save typeorm mysql2
 ```
 
-İlk yapmamız gereken şey, `typeorm` paketinden alınan `new DataSource().initialize()` sınıfını kullanarak veritabanımızla bağlantı kurmaktır. `initialize()` işlevi bir `Promise` döndürdüğü için [async sağlayıcı](/docs/fundamentals/async-components) oluşturmamız gerekiyor.
+İlk yapmamız gereken şey, `typeorm` paketinden alınan `new DataSource().initialize()` sınıfını kullanarak veritabanımızla bağlantı kurmaktır. `initialize()` işlevi bir `Promise` döndürdüğü için [async sağlayıcı](/docs/fundamentals/async-providers) oluşturmamız gerekiyor.
 
 ```typescript
 @@filename(database.providers)

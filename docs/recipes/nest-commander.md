@@ -1,6 +1,6 @@
 ### Nest Commander
 
-[Standalone uygulama](/docs/standalone-applications) dokümantasyonlarına ek olarak, tipik bir Nest uygulamasına benzer bir yapıda komut satırı uygulamaları yazmak için [nest-commander](https://jmcdo29.github.io/nest-commander) paketi bulunmaktadır.
+[Standalone uygulama](/docs/application-context) dokümantasyonlarına ek olarak, tipik bir Nest uygulamasına benzer bir yapıda komut satırı uygulamaları yazmak için [nest-commander](https://jmcdo29.github.io/nest-commander) paketi bulunmaktadır.
 
 > info **info** `nest-commander` üçüncü taraf bir pakettir ve tamamen NestJS çekirdek ekibi tarafından yönetilmez. Lütfen, kütüphane ile ilgili bulduğunuz herhangi bir sorunu [uygun depoya](https://github.com/jmcdo29/nest-commander/issues/new/choose) bildirin.
 

@@ -59,7 +59,7 @@ const moduleRef = await this.lazyModuleLoader.load(() => LazyModule);
 
 Burada `lazy.module.ts` bir TypeScript dosyasıdır ve herhangi bir değişiklik yapmadan **düzenli bir Nest modülü** (reguler Nest module) döndürür.
 
-`LazyModuleLoader#load` yöntemi, [modül referansını](/docs/fundamentals/module-ref) (`LazyModule`'in) döndürür ve bu, sağlayıcıların iç listesinde gezinmenizi ve bir arama anahtarı olarak enjeksiyon anahtarını kullanarak herhangi bir sağlayıcıya referans almanızı sağlar.
+`LazyModuleLoader#load` yöntemi, [modül referansını](/docs/fundamentals/module-reference) (`LazyModule`'in) döndürür ve bu, sağlayıcıların iç listesinde gezinmenizi ve bir arama anahtarı olarak enjeksiyon anahtarını kullanarak herhangi bir sağlayıcıya referans almanızı sağlar.
 
 Örneğin, aşağıdaki tanıma sahip bir `LazyModule`'imiz olduğunu varsayalım:
 
@@ -103,7 +103,7 @@ const lazyService = moduleRef.get(LazyService);
 
 Nest'te controller'lar (veya GraphQL uygulamalarındaki resolver'lar), rotaları/yolları/konuları temsil ettiği için, bu tür bir **tembel yükleme yapılamaz**.
 
-> error **Uyarı** Tembel yüklenen modüller içinde kayıtlı controller'lar, [resolver'lar](/docs/graphql/resolvers) ve [gateway'ler](/docs/websockets/gateways) beklenildiği gibi davranmaz. Benzer şekilde, `MiddlewareConsumer` arayüzünü uygulayarak ortaya çıkan middleware fonksiyonlarını (middleware fonksiyonları) da talep üzerine kaydedemezsiniz.
+> error **Uyarı** Tembel yüklenen modüller içinde kayıtlı controller'lar, [resolver'lar](/docs/graphql/resolvers-map) ve [gateway'ler](/docs/websockets/gateways) beklenildiği gibi davranmaz. Benzer şekilde, `MiddlewareConsumer` arayüzünü uygulayarak ortaya çıkan middleware fonksiyonlarını (middleware fonksiyonları) da talep üzerine kaydedemezsiniz.
 
 Örneğin, bir HTTP uygulamasında Fastify sürücüsü kullanarak bir REST API (HTTP uygulaması) oluşturuyorsanız (`@nestjs/platform-fastify` paketini kullanarak), Fastify, uygulama başarılı bir şekilde dinlemeye başladıktan sonra rotaları kaydetme şansı vermez. Bu, modül kontrolcülerinde kaydedilen tüm tembel yüklenen rotaların erişilemez olacağı anlamına gelir, çünkü bunları çalışma zamanında kaydetme olanağı yoktur.
 

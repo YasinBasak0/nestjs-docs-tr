@@ -40,7 +40,7 @@ export class CommonService {
 
 #### ModuleRef sınıfı alternatifi
 
-`forwardRef()` kullanmanın alternatiflerinden biri, kodunuzu yeniden düzenlemek ve (aksi takdirde) döngüsel ilişkinin bir tarafında bir sağlayıcıyı almak için `ModuleRef` sınıfını kullanmaktır. `ModuleRef` yardımcı sınıfı hakkında daha fazla bilgiyi [buradan](/docs/fundamentals/module-ref) edinebilirsiniz.
+`forwardRef()` kullanmanın alternatiflerinden biri, kodunuzu yeniden düzenlemek ve (aksi takdirde) döngüsel ilişkinin bir tarafında bir sağlayıcıyı almak için `ModuleRef` sınıfını kullanmaktır. `ModuleRef` yardımcı sınıfı hakkında daha fazla bilgiyi [buradan](/docs/fundamentals/module-reference) edinebilirsiniz.
 
 #### Modül ileri referans
 

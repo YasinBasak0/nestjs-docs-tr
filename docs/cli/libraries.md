@@ -1,5 +1,3 @@
-Tabii ki, NestJS dökümanlarını Türkçeye çevirmekte size yardımcı olabilirim. Aşağıda verdiğiniz metni Türkçeye çevirdim:
-
 ### Kütüphaneler
 
 Birçok uygulama genelde aynı problemleri çözmeye ihtiyaç duyar veya bir modüler bileşeni farklı bağlamlarda kullanmak ister. Nest, bu sorunları çözmek için farklı seviyelerde çalışan birkaç yaklaşım sunar, ancak her biri farklı mimari ve organizasyonel hedeflere ulaşmada yardımcı olan bir şekilde çalışır.

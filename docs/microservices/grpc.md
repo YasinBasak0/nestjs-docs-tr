@@ -533,7 +533,7 @@ Benzer şekilde, `@GrpcStreamMethod()` işareti ile işaretlenmiş işleyicilerd
 
 Handler'dan metadata göndermek için `ServerDuplexStream#sendMetadata()` yöntemini kullanın (üçüncü handler argümanı).
 
-[Çağrı akışı işleyicileri](microservices/grpc#call-stream-handler) içinde metadata'yı okumak için `requestStream` referansında `metadata` etkinliğini dinleyin, aşağıdaki gibi:
+[Çağrı akışı işleyicileri](/docs/microservices/grpc#call-stream-handler) içinde metadata'yı okumak için `requestStream` referansında `metadata` etkinliğini dinleyin, aşağıdaki gibi:
 
 ```typescript
 requestStream.on('metadata', (metadata: Metadata) => {

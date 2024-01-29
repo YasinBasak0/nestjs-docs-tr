@@ -2,7 +2,7 @@
 
 > info **İpucu** Bu bölüm, Nest Devtools'un Nest çerçevesiyle entegrasyonunu kapsar. Devtools uygulamasını arıyorsanız, lütfen [Devtools](https://devtools.nestjs.com) web sitesini ziyaret edin.
 
-CI/CD entegrasyonu, **[Enterprise](/docs/settings)** planına sahip kullanıcılar için kullanılabilir.
+CI/CD entegrasyonu, **[Enterprise](/docs/introduction)** planına sahip kullanıcılar için kullanılabilir.
 
 CI/CD entegrasyonunun size nasıl ve neden yardımcı olabileceğini öğrenmek için bu videoyu izleyebilirsiniz:
 

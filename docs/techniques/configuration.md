@@ -161,7 +161,7 @@ export default () => {
 };
 ```
 
-> warning **Not** Nest CLI, "assets" (TS olmayan dosyalar) dosyalarını derleme sırasında otomatik olarak `dist` klasörüne taşımaz. YAML dosyalarınızın kopyalandığından emin olmak için, `nest-cli.json` dosyasındaki `compilerOptions#assets` nesnesine bunu belirtmeniz gerekir. Örneğin, `config` klasörü `src` klasörü ile aynı düzeydeyse, `"assets": [{{ '{' }}"include": "../config/*.yaml", "outDir": "./dist/config"{{ '}' }}]` değerini ekleyin. Daha fazlasını [buradan](/docs/cli/monorepo#assets) okuyun.
+> warning **Not** Nest CLI, "assets" (TS olmayan dosyalar) dosyalarını derleme sırasında otomatik olarak `dist` klasörüne taşımaz. YAML dosyalarınızın kopyalandığından emin olmak için, `nest-cli.json` dosyasındaki `compilerOptions#assets` nesnesine bunu belirtmeniz gerekir. Örneğin, `config` klasörü `src` klasörü ile aynı düzeydeyse, `"assets": [{{ '{' }}"include": "../config/*.yaml", "outDir": "./dist/config"{{ '}' }}]` değerini ekleyin. Daha fazlasını [buradan](/docs/cli/workspaces#assets) okuyun.
 
 <app-banner-devtools></app-banner-devtools>
 

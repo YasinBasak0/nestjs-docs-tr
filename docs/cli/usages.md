@@ -142,7 +142,7 @@ $ nest start <name> [options]
 | `--watch`               | İzleme modunda çalış (canlı yeniden yükleme). <br/>Takma adı `-w`                                                  |
 | `--builder [name]`      | Derleme için kullanılacak yapılandırıcıyı belirt (`tsc`, `swc`, veya `webpack`). <br/>Takma adı `-b`           |
 | `--preserveWatchOutput` | Ekranı temizleme yerine eski konsol çıkışını izleme modunda tutun. (`tsc` izleme modu için sadece)               |
-| `--watchAssets`         | İzleme modunda çalış (canlı yeniden yükleme), TS olmayan dosyaları (varlıklar) izle. Daha fazla ayrıntı için [Assets](cli/monorepo#assets)'e bakın. |
+| `--watchAssets`         | İzleme modunda çalış (canlı yeniden yükleme), TS olmayan dosyaları (varlıklar) izle. Daha fazla ayrıntı için [Assets](/docs/cli/workspaces#assets)'e bakın. |
 | `--debug [hostport]`    | Hata ayıklama modunda çalış ( --inspect bayrağı ile). <br/>Takma adı `-d`                                        |
 | `--webpack`             | Derleme için webpack kullan. (deprecated: bunun yerine `--builder webpack` kullanın)                              |
 | `--webpackPath`         | Webpack yapılandırmasının yolu.                                                                                    |

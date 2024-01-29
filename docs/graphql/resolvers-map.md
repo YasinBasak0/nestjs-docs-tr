@@ -157,7 +157,7 @@ export class AuthorsResolver {
 
 > bilgi **İpucu** Tüm dekoratörler (örneğin, `@Resolver`, `@ResolveField`, `@Args`, vb.) `@nestjs/graphql` paketinden içe aktarılmaktadır.
 
-Birden çok çözücü sınıfı tanımlayabilirsiniz. Nest çalışma zamanında bunları birleştirecektir. Kod düzenleme hakkında daha fazla bilgi için aşağıdaki [module](/docs/graphql/resolvers#module) bölümüne bakın.
+Birden çok çözücü sınıfı tanımlayabilirsiniz. Nest çalışma zamanında bunları birleştirecektir. Kod düzenleme hakkında daha fazla bilgi için aşağıdaki [module](/docs/graphql/resolvers-map#module) bölümüne bakın.
 
 > uyarı **Not** `AuthorsService` ve `PostsService` sınıflarındaki mantık isteğe bağlı veya karmaşık olabilir. Bu örnek, çözücüleri nasıl oluşturacağımızı ve diğer sağlayıcılarla nasıl etkileşim kurabileceğimizi göstermek amacını taşımaktadır.
 

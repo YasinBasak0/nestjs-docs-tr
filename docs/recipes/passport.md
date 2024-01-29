@@ -882,7 +882,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
 
 Passport API'si, stratejileri kütüphanenin global örneğine kaydetmeye dayanır. Bu nedenle stratejiler, isteğe bağlı seçeneklere veya her istek için dinamik olarak oluşturulan bir örneğe sahip olacak şekilde tasarlanmamıştır (daha fazla bilgi için [request-scoped](/docs/fundamentals/injection-scopes) sağlayıcılarına bakın). Stratejiyi request-scoped olarak yapılandırdığınızda, Nest onu hiçbir zaman oluşturmaz, çünkü belirli bir rotaya bağlı değildir. Herhangi bir "request-scoped" stratejisinin isteğe bağlı olarak yürütülmesi gerektiğini fiziksel olarak belirlemenin bir yolu yoktur.
 
-Ancak, strateji içinde request-scoped sağlayıcıları dinamik olarak çözmek için yollar vardır. Bunun için [module reference](/docs/fundamentals/module-ref) özelliğini kullanırız.
+Ancak, strateji içinde request-scoped sağlayıcıları dinamik olarak çözmek için yollar vardır. Bunun için [module reference](/docs/fundamentals/module-reference) özelliğini kullanırız.
 
 İlk olarak, `local.strategy.ts` dosyasını açın ve `ModuleRef`'i normal yoldan enjekte edin:
 

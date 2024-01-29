@@ -2,7 +2,7 @@
 
 ##### Bu bölüm sadece TypeScript için geçerlidir
 
-> **Uyarı** Bu makalede, **Sequelize** paketini temel alarak sıfırdan `DatabaseModule` oluşturmayı öğreneceksiniz. Bu teknik, kullanımı daha kolay olan ve önceden yapılandırılmış olan `@nestjs/sequelize` paketini kullanarak önemli ölçüde tasarruf edebileceğiniz bir miktarda fazlalık içerir. Daha fazla bilgi için [buraya](/docs/techniques/database#sequelize-integration) bakın.
+> **Uyarı** Bu makalede, **Sequelize** paketini temel alarak sıfırdan `DatabaseModule` oluşturmayı öğreneceksiniz. Bu teknik, kullanımı daha kolay olan ve önceden yapılandırılmış olan `@nestjs/sequelize` paketini kullanarak önemli ölçüde tasarruf edebileceğiniz bir miktarda fazlalık içerir. Daha fazla bilgi için [buraya](/docs/techniques/database) bakın.
 
 [Sequelize](https://github.com/sequelize/sequelize), vanilya JavaScript'te yazılmış popüler bir Nesne İlişkisel Eşlemci (ORM) dir. Ancak, bir dizi dekoratör ve diğer ekstraları sağlayan bir TypeScript sarmalayıcısı olan [sequelize-typescript](https://github.com/RobinBuschmann/sequelize-typescript) de bulunmaktadır.
 

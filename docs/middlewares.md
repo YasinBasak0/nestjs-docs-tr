@@ -253,4 +253,4 @@ app.use(logger);
 await app.listen(3000);
 ```
 
-> info **İpucu** Bir global middleware içinde DI konteynerine erişmek mümkün değildir. `app.use()` kullanırken [fonksiyonel middleware](middleware#functional-middleware) kullanabilirsiniz. Alternatif olarak, bir sınıf middleware'ini kullanabilir ve `AppModule` (veya başka bir modül) içinde `.forRoutes('*')` ile tüketebilirsiniz.
+> info **İpucu** Bir global middleware içinde DI konteynerine erişmek mümkün değildir. `app.use()` kullanırken [fonksiyonel middleware](middlewares#functional-middleware) kullanabilirsiniz. Alternatif olarak, bir sınıf middleware'ini kullanabilir ve `AppModule` (veya başka bir modül) içinde `.forRoutes('*')` ile tüketebilirsiniz.
